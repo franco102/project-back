@@ -113,21 +113,25 @@ Laravel has the most extensive and thorough [documentation](https://laravel.com/
 2. **Instala las dependencias:**
    ```bash
    composer install
-3. **generar key del app :**
+3. **Copiar archivo .env :**
    ```bash
-   php artisan key:generate
-5. **Publicar el archivo de JWT:**
+   cp .env.example .env
+4. **generar key del app :**
    ```bash
-   php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
-4. **generar jwt del app :**
+   php artisan key:generate 
+5. **generar jwt del app :**
    ```bash
    php artisan jwt:secret
-5. **Corre la migracion y Seeders :**
+6. **Corre la migracion y Seeders :**
    ```bash
    php artisan migrate:fresh --seed
-6. **Lavantar proyecto en local :**
+7. **Lavantar proyecto en local :**
    ```bash
    php artisan serve
+8. **Usuario y Contraseña  respectivamente:**
+   ```bash
+   user1@example.com , password
+
 
 
  
